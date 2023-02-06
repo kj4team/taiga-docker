@@ -1,2 +1,6 @@
 db-data
 static-data
+
+variables.env
+
+.idea/
