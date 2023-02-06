@@ -9,10 +9,6 @@ version: "3.5"
 networks:
   penpot:
 
-volumes:
-  penpot_postgres_data:
-  penpot_assets_data:
-
 services:
   penpot-frontend:
     image: "penpotapp/frontend:latest"
