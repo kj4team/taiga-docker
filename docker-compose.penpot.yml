@@ -15,7 +15,7 @@ services:
     ports:
       - 8701:80
     volumes:
-      - penpot_assets_data:/opt/data
+      - /mnt/data/taiga/penpot:/opt/data
     env_file:
       - docker-compose.penpot.env
     depends_on:
@@ -27,7 +27,7 @@ services:
   penpot-backend:
     image: "penpotapp/backend:latest"
     volumes:
-      - penpot_assets_data:/opt/data
+      - /mnt/data/taiga/penpot:/opt/data
     depends_on:
       - penpot-postgres
       - penpot-redis
