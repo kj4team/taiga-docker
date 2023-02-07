@@ -10,7 +10,8 @@ x-volumes:
 services:
 
   taiga-back:
-    image: taigaio/taiga-back:latest
+    #image: taigaio/taiga-back:latest
+    build: ./custom-back
     restart: unless-stopped
     volumes: *default-back-volumes
     env_file:
@@ -52,7 +53,8 @@ services:
       - variables.env
     networks:
       - taiga
-    # volumes:
+    volumes:
+      - - ./custom-front/conf.override.json:/usr/share/nginx/html/conf.json
     #   - ./conf.json:/usr/share/nginx/html/conf.json
 
   taiga-events:
@@ -103,3 +105,4 @@ volumes:
 
 networks:
   taiga:
+
