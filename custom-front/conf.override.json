@@ -1,6 +1,6 @@
 {
     "api": "https://pm.we3d.vn/api/v1/",
-    "eventsUrl": "ws://pm.we3d.vn/events",
+    "eventsUrl": "wss://pm.we3d.vn/events",
     "baseHref": "/",
     "eventsMaxMissedHeartbeats": 5,
     "eventsHeartbeatIntervalTime": 60000,
