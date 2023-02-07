@@ -13,8 +13,6 @@ services:
       - CELERY_ENABLED="False"
     env_file:
       - variables.env
-    depends_on:
-      - taiga-db
     entrypoint: "python manage.py"
     volumes: *default-back-volumes
     networks:
