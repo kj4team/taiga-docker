@@ -54,7 +54,7 @@ services:
     networks:
       - taiga
     volumes:
-      - - ./custom-front/conf.override.json:/usr/share/nginx/html/conf.json
+      - ./custom-front/conf.override.json:/usr/share/nginx/html/conf.json
     #   - ./conf.json:/usr/share/nginx/html/conf.json
 
   taiga-events:
